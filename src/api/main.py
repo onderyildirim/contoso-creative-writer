@@ -14,7 +14,7 @@ from orchestrator import Task, create
 base = Path(__file__).resolve().parent
 
 load_dotenv()
-tracer = init_tracing()
+tracer = init_tracing(local_tracing=True)
 
 app = FastAPI()
 
